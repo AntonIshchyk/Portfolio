@@ -3,7 +3,8 @@ import React from "react";
 const About: React.FC = () => {
     return (
       <>
-      <h1>About</h1>
+        <h1>test</h1>
+        <p className="text-xl">hello</p>
       </>
     );
   }
