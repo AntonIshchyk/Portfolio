@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import registerImage from '../assets/register.jpg';
+import friendsImage from '../assets/friends.jpg';
 
 const Projects: React.FC = () => {
   return (
@@ -26,13 +28,10 @@ const Projects: React.FC = () => {
                 autoplaySpeed={5000}
               >
                 <div>
-                  <img src="image1.jpg" alt="Event 1" className="w-full h-auto rounded-lg" />
+                  <img src={registerImage} alt="Register Page" className="w-full h-auto rounded-lg" />
                 </div>
                 <div>
-                  <img src="image2.jpg" alt="Event 2" className="w-full h-auto rounded-lg" />
-                </div>
-                <div>
-                  <img src="image3.jpg" alt="Event 3" className="w-full h-auto rounded-lg" />
+                  <img src={friendsImage} alt="Friends Page" className="w-full h-auto rounded-lg" />
                 </div>
               </Slider>
             </div>
