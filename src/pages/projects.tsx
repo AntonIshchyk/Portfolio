@@ -16,14 +16,13 @@ import { SiSwagger } from "react-icons/si";
 const Projects: React.FC = () => {
   return (
     <div className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-center mb-12">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <a
           href="https://github.com/AntonIshchyk/Social-Agenda"
           target="_blank"
           rel="noopener noreferrer"
           className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-3xl font-semibold mb-6">Social Agenda</h2>
+          <h2 className="flex items-center text-3xl font-semibold mb-6">Social Agenda <FaGithub className="w-10 h-10 duration-300 ml-2"/></h2>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
               <div>
@@ -37,9 +36,9 @@ const Projects: React.FC = () => {
               </div>
             </Slider>
           </div>
-          <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
+          <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events. Main focus lied on the backend side.</p>
           <br />
-          <p className="flex items-center text-xl">
+          <p className="flex items-center text-lg">
             Technologies: 
             <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-2" />
             <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-2" />
@@ -53,10 +52,10 @@ const Projects: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-3xl font-semibold mb-6">CargoHub</h2>
+          <h2 className="flex items-center text-3xl font-semibold mb-6">CargoHub <FaGithub className="w-10 h-10 duration-300 ml-2"/> </h2>
           <p className="text-lg">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
           <br />
-          <p className="flex items-center text-xl">
+          <p className="flex items-center text-lg">
             Technologies: 
             <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-2" />
             <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
