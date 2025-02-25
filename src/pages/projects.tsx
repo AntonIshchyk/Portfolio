@@ -5,7 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import registerImage from "../assets/register.jpg";
 import friendsImage from "../assets/friends.jpg";
 import friendImage from "../assets/friend.jpg";
-import { FaGithub } from "react-icons/fa"
+
+import { SiDotnet } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiSwagger } from "react-icons/si";
 
 const Projects: React.FC = () => {
   return (
@@ -31,9 +37,15 @@ const Projects: React.FC = () => {
               </div>
             </Slider>
           </div>
-          <p>The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
+          <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
           <br />
-          <p>Used Technologies:</p>
+          <p className="flex items-center text-xl">
+            Technologies: 
+            <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-2" />
+            <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-2" />
+            <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-2" />
+            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
+          </p>
         </a>
 
         <a
@@ -42,14 +54,18 @@ const Projects: React.FC = () => {
           rel="noopener noreferrer"
           className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
           <h2 className="text-3xl font-semibold mb-6">CargoHub</h2>
-          <p>Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
+          <p className="text-lg">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
           <br />
-          <p>
-            Used Technologies: <FaGithub />
+          <p className="flex items-center text-xl">
+            Technologies: 
+            <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-2" />
+            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
+            <SiSwagger className="w-12 h-12 hover:text-[#85C441] transition-colors duration-300 ml-2" />
           </p>
         </a>
       </div>
     </div>
   );
 };
+
 export default Projects;
