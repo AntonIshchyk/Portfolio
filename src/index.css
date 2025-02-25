@@ -6,3 +6,13 @@ body {
   background-color: #dfdbbb;
   color: #000000;
 }
+
+.slick-slide {
+  padding: 0 15px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
