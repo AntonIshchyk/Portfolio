@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import registerImage from "../assets/register.jpg";
 import friendsImage from "../assets/friends.jpg";
 import friendImage from "../assets/friend.jpg";
+import { FaGithub } from "react-icons/fa"
 
 const Projects: React.FC = () => {
   return (
@@ -32,6 +32,8 @@ const Projects: React.FC = () => {
             </Slider>
           </div>
           <p>The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
+          <br />
+          <p>Used Technologies:</p>
         </a>
 
         <a
@@ -40,11 +42,14 @@ const Projects: React.FC = () => {
           rel="noopener noreferrer"
           className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
           <h2 className="text-3xl font-semibold mb-6">CargoHub</h2>
-          <p>...</p>
+          <p>Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
+          <br />
+          <p>
+            Used Technologies: <FaGithub />
+          </p>
         </a>
       </div>
     </div>
   );
 };
-
 export default Projects;
