@@ -2,16 +2,18 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// project images
 import registerImage from "../assets/register.jpg";
 import friendsImage from "../assets/friends.jpg";
 import friendImage from "../assets/friend.jpg";
-
+// icons
 import { SiDotnet } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { SiSwagger } from "react-icons/si";
+import { SiSqlite } from "react-icons/si";
 
 const Projects: React.FC = () => {
   return (
@@ -58,8 +60,9 @@ const Projects: React.FC = () => {
           <p className="flex items-center text-lg">
             Technologies: 
             <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-2" />
-            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
             <SiSwagger className="w-12 h-12 hover:text-[#85C441] transition-colors duration-300 ml-2" />
+            <SiSqlite className="w-12 h-12 hover:text-[#003B57] transition-colors duration-300 ml-2" />
+            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
           </p>
         </a>
       </div>
