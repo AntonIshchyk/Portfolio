@@ -24,9 +24,9 @@ const Projects: React.FC = () => {
           <h2 className="flex items-center text-3xl font-semibold mb-6">Social Agenda <FaGithub className="w-10 h-10 duration-300 ml-2"/></h2>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
-              <img src={registerImage} alt="Register Page" className="w-full h-auto rounded-lg" />
-              <img src={friendsImage} alt="Friends Page" className="w-full h-auto rounded-lg" />
-              <img src={friendImage} alt="Friend Attending Event" className="w-full h-auto rounded-lg" />
+              <img src={registerImage} alt="Register Page" className="w-full h-auto rounded-lg object-cover" />
+              <img src={friendsImage} alt="Friends Page" className="w-full h-auto rounded-lg object-cover " />
+              <img src={friendImage} alt="Friend Attending Event" className="w-full h-auto rounded-lg object-cover" />
             </Slider>
           </div>
           <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events. Main focus lied on the backend side.</p>
@@ -46,11 +46,12 @@ const Projects: React.FC = () => {
           rel="noopener noreferrer"
           className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
           <h2 className="flex items-center text-3xl font-semibold mb-6">CargoHub <FaGithub className="w-10 h-10 duration-300 ml-2"/> </h2>
-          <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
-              <img src={endpoints} alt="Register Page" className="w-full h-auto rounded-lg" />
-              <img src={itemGroups} alt="Register Page" className="w-auto  h-auto rounded-lg" />
+          <div className="mb-6">
+            <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
+                <img src={endpoints} alt="Register Page" className="w-full h-auto rounded-lg object-cover" />
+                <img src={itemGroups} alt="Register Page" className="w-auto  h-auto rounded-lg object-cover" />
             </Slider>
-          <br />
+          </div>
           <p className="text-lg">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
           <br />
           <p className="flex items-center text-lg">
