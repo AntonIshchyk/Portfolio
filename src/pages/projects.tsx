@@ -29,8 +29,8 @@ const Projects: React.FC = () => {
               <img src={friendImage} alt="Friend Attending Event" className="w-full h-auto rounded-lg object-cover" />
             </Slider>
           </div>
-          <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events. Main focus lied on the backend side.</p>
-          <br />
+          <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
+          <br /> <br />
           <p className="flex items-center text-lg">
             Technologies: 
             <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-2" />
