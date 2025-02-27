@@ -13,8 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 bg-[#333] text-white shadow-lg z-10">
-      <div className="flex justify-between items-center p-4">
-        <Link to="/" className="text-xl font-bold">My Portfolio</Link>
+      <div className="flex justify-center items-center p-4">
         <nav>
           <ul className="flex space-x-6">
           {navLinks.map(({ path, label }) => {
