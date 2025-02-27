@@ -22,7 +22,7 @@ const Header: React.FC = () => {
                 <li key={path} className="relative">
                   <Link
                     to={path}
-                    className={`hover:text-[#CFC7A3] transition duration-300 ${isActive ? "text-[#CFC7A3] font-semibold" : ""}`}>
+                    className={`hover:text-[#CFC7A3] text-lg transition duration-300 ${isActive ? "text-[#CFC7A3] font-semibold" : ""}`}>
                     {label}
                   </Link>
                   {isActive && (
