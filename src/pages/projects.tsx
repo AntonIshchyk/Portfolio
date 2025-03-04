@@ -16,12 +16,14 @@ const Projects: React.FC = () => {
   return (
     <div className="min-h-screen p-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <a
-          href="https://github.com/AntonIshchyk/Social-Agenda"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-          <h2 className="flex items-center text-3xl font-semibold mb-6">Social Agenda <FaGithub className="w-10 h-10 duration-300 ml-2"/></h2>
+        <div className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+          <a
+            href="https://github.com/AntonIshchyk/Social-Agenda"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-3xl font-semibold mb-6">
+            Social Agenda <FaGithub className="w-10 h-10 duration-300 ml-2"/>
+          </a>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
               <img src={registerImage} alt="Register Page" className="w-full h-auto rounded-lg" />
@@ -38,14 +40,16 @@ const Projects: React.FC = () => {
             <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-2" />
             <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://github.com/AntonIshchyk/CargoHub"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-          <h2 className="flex items-center text-3xl font-semibold mb-6">CargoHub <FaGithub className="w-10 h-10 duration-300 ml-2"/> </h2>
+        <div className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+          <a
+            href="https://github.com/AntonIshchyk/CargoHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-3xl font-semibold mb-6">
+            CargoHub <FaGithub className="w-10 h-10 duration-300 ml-2"/>
+          </a>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
                 <img src={endpoints} alt="Register Page" className="w-full h-auto rounded-lg" />
@@ -61,7 +65,7 @@ const Projects: React.FC = () => {
             <SiSqlite className="w-12 h-12 hover:text-[#003B57] transition-colors duration-300 ml-2" />
             <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-2" />
           </p>
-        </a>
+        </div>
       </div>
     </div>
   );
