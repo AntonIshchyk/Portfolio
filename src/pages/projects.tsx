@@ -15,7 +15,7 @@ import { SiSqlite, SiTypescript, SiSwagger, SiDotnet} from "react-icons/si";
 const Projects: React.FC = () => {
   return (
     <div className="min-h-screen p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <a
           href="https://github.com/AntonIshchyk/Social-Agenda"
           target="_blank"
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
                 <img src={endpoints} alt="Register Page" className="w-full h-auto rounded-lg" />
-                <img src={itemGroups} alt="Register Page" className="w-auto h-auto rounded-lg" />
+                <img src={itemGroups} alt="Register Page" className="w-full h-auto rounded-lg" />
             </Slider>
           </div>
           <p className="text-lg">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
