@@ -21,8 +21,8 @@ const Projects: React.FC = () => {
             href="https://github.com/AntonIshchyk/Social-Agenda"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-3xl font-semibold mb-6">
-            Social Agenda <FaGithub className="w-10 h-10 duration-300 ml-2"/>
+            className="flex items-center text-3xl font-semibold mb-6 hover:underline">
+            Social Agenda <FaGithub className="w-10 h-10 ml-2"/>
           </a>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
@@ -47,8 +47,8 @@ const Projects: React.FC = () => {
             href="https://github.com/AntonIshchyk/CargoHub"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-3xl font-semibold mb-6">
-            CargoHub <FaGithub className="w-10 h-10 duration-300 ml-2"/>
+            className="flex items-center text-3xl font-semibold mb-6 hover:underline">
+            CargoHub <FaGithub className="w-10 h-10 ml-2"/>
           </a>
           <div className="mb-6">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
