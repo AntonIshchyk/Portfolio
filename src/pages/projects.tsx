@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // project images
-import registerImage from "../assets/register.jpg";
-import friendsImage from "../assets/friends.jpg";
-import friendImage from "../assets/friend.jpg";
-import itemGroups from "../assets/item-groups.jpg";
-import endpoints from "../assets/endpoints.jpg"
+import registerImage from "../assets/projects/register.jpg";
+import friendsImage from "../assets/projects/friends.jpg";
+import friendImage from "../assets/projects/friend.jpg";
+import itemGroups from "../assets/projects/item-groups.jpg";
+import endpoints from "../assets/projects/endpoints.jpg"
 // icons
 import { FaReact, FaGithub, FaGitAlt} from "react-icons/fa";
 import { SiSqlite, SiTypescript, SiSwagger, SiDotnet} from "react-icons/si";
