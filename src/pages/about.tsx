@@ -11,9 +11,8 @@ const About: React.FC = () => {
         <a
           href={CV}
           download="CV Software Developer Anton Ishchyk.pdf"
-          className="bg-blue-600 text-white py-2 px-4 rounded inline-flex items-center mb-6 hover:bg-blue-700"
-        >
-          <TfiDownload className="mr-2" /> Download Resume
+          className="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-2 px-6 rounded-full inline-flex items-center shadow-lg hover:scale-105 transition-all">
+          <TfiDownload className="mr-2 text-xl" /> Download Resume
         </a>
 
         <div className="mt-6 flex space-x-4">
