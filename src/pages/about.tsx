@@ -2,18 +2,20 @@ import React from "react";
 import { TfiDownload } from "react-icons/tfi";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
+import Timeline from "../components/timeline";
 
 
 const About: React.FC = () => {
     return (
       <>
-        <h1>test</h1>
         <a
           href={CV}
           download="CV Software Developer Anton Ishchyk.pdf"
           className="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-2 px-6 rounded-full inline-flex items-center shadow-lg hover:scale-105 transition-all">
           <TfiDownload className="mr-2 text-xl" /> Download Resume
         </a>
+
+        <Timeline/>
 
         <div className="mt-6 flex space-x-4">
           <a href="https://github.com/AntonIshchyk" target="_blank" rel="noopener noreferrer" className="text-[#333] hover:text-black text-3xl">
