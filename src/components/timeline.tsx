@@ -1,18 +1,40 @@
-const timelineData = [{
-    title: 'Launched Personal Portfolio Website',
-    description:
-      'Built a portfolio website to showcase projects and achievements using React and Tailwind CSS.',
-    date: 'March, 2025',
+const timelineData = [
+  {
+    title: 'Software Developer',
+    company: "Your Company",
+    description: 'Worked on amazing product',
+    date: 'ASAP - X',
+    link: "",
   },
-  {title: 'Launched Personal Portfolio Website',
-  description:
-    'Built a portfolio website to showcase projects and achievements using React and Tailwind CSS.',
-  date: 'March, 2025',
+  {
+    title: 'Warehouse Employee',
+    company: "Verbena Meat",
+    description: 'Assisted in maintaining organized warehouse inventory and ensuring efficient stock management. Responsible for packing products for distribution.',
+    date: 'July 2020 - August 2020',
+    link: "https://verbenameat.com.ua/",
+  }
+]
+
+const education = [{
+    university: 'Rotterdam University of Applied Sciences',
+    degree: "Bachelor's degree",
+    field: "Informatica",
+    form: "Full-time",
+    date: '2023-2027',
+    link: "https://www.rotterdamuas.com/",
+  },
+  {
+    university: 'Lutsk National Technical University',
+    degree: "Bachelor's degree",
+    field: "Computer Science",
+    form: "Part-time",
+    date: '2022-2026',
+    link: "https://lntu.edu.ua/en",
   },
 ]
   
 interface PropsType {
-  title: string
+  title: string 
   description: string
   date: string
 }
