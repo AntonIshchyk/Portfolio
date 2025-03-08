@@ -3,6 +3,7 @@ import { TfiDownload } from "react-icons/tfi";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
 import Timeline from "../components/timeline";
+import {education, work} from "../data/timeline"
 
 
 const About: React.FC = () => {
@@ -15,7 +16,9 @@ const About: React.FC = () => {
           <TfiDownload className="mr-2 text-xl" /> Download Resume
         </a>
 
-        <Timeline/>
+        <Timeline education={education}/>
+
+        <Timeline work={work}/>
 
         <div className="mt-6 flex space-x-4">
           <a href="https://github.com/AntonIshchyk" target="_blank" rel="noopener noreferrer" className="text-[#333] hover:text-black text-3xl">
