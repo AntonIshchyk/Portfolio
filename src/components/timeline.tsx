@@ -9,17 +9,25 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
         </time>
         {"university" in props ? (
           <div>
-            <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold">
-              {props.university}
-            </a>
+            {props.link ? (
+              <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold">
+                {props.university}
+              </a>
+            ) : (
+              <span className="text-xl font-bold">{props.university}</span>
+            )}
             <div>{props.degree} in {props.field} | {props.form}</div>
           </div>
         ) : (
           <div>
             <div className="text-xl font-bold">
-              <a href={props.link} target="_blank" rel="noopener noreferrer">
-                {props.title} at {props.company}
-              </a>
+              {props.link ? (
+                <a href={props.link} target="_blank" rel="noopener noreferrer">
+                  {props.title} at {props.company}
+                </a>
+              ) : (
+                <>{props.title} at {props.company}</>
+              )}
             </div>
             <div className="whitespace-pre-line">{props.description}</div>
           </div>

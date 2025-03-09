@@ -17,8 +17,8 @@ const About: React.FC = () => {
 
       <Timeline education={education} />
       <Timeline work={work} />
-      
-      <div className="mt-6 flex space-x-4">
+
+      <div className="mt-1 flex space-x-4">
         <a href="https://github.com/AntonIshchyk" target="_blank" rel="noopener noreferrer" className="text-[#333] hover:text-black text-3xl">
           <FaGithub />
         </a>
