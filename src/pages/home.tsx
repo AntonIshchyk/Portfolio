@@ -8,10 +8,13 @@ const Home: React.FC = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between mb-12 gap-8">
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-5xl font-bold mt-4 mb-4">
-            Let`s Collaborate!
+            Hi, I'm Anton Ishchyk
           </h2>
-          <p className="text-xl">
-            Welcome to my portfolio, where you can explore my projects, learn more about me, and get in touch.
+          <p className="text-2xl">
+            A passionate software developer focused on creating optimal, user-friendly, and forward-thinking software solutions.
+          </p>
+          <p className="text-2xl">
+            Let's build something amazing together!
           </p>
         </div>
 

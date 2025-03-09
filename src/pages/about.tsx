@@ -1,6 +1,6 @@
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram  } from "react-icons/fa";
 import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
 import Timeline from "../components/timeline";
 import { education, work } from "../data/timeline";
@@ -8,23 +8,7 @@ import { education, work } from "../data/timeline";
 const About: React.FC = () => {
   return (
     <div className="w-full flex flex-col items-center px-6 py-8">
-      <div className="w-full max-w-3xl text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">
-          Hi, I'm Anton Ishchyk
-        </h2>
-        <p className="text-lg">
-          A passionate software developer focused on creating optimal, user-friendly, and forward-thinking software solutions. Let's build something amazing together!
-        </p>
-      </div>
-
-      <div className="flex justify-center space-x-6 mb-12">
-        <a
-          href="https://github.com/AntonIshchyk"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#333] hover:text-black text-4xl transition-all duration-200">
-          <FaGithub />
-        </a>
+      <div className="flex space-x-6 mb-12">
         <a
           href="https://www.linkedin.com/in/anton-ishchyk/"
           target="_blank"
@@ -33,13 +17,27 @@ const About: React.FC = () => {
           <FaLinkedin />
         </a>
         <a
+          href="https://t.me/Anton_Ishchyk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#333] hover:text-[#0088cc] text-4xl transition-all duration-200">
+          <FaTelegram />
+        </a>
+        <a
           href="mailto:anton.ishchyk@gmail.com"
           className="text-[#333] hover:text-red-500 text-4xl transition-all duration-200">
           <FaEnvelope />
         </a>
+        <a
+          href="https://github.com/AntonIshchyk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#333] hover:text-black text-4xl transition-all duration-200">
+          <FaGithub />
+        </a>
       </div>
 
-      <div className="flex justify-center mb-16">
+      <div className="mb-16">
         <a
           href={CV}
           download="CV Software Developer Anton Ishchyk.pdf"
