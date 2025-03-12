@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           <p className="text-2xl">
             Let's build something amazing together!
           </p>
-          <div className="flex space-x-6 mt-4 bg-[#90dde9] py-3 px-8 rounded-full items-center justify-center shadow-xl hover:scale-105 transition-all duration-300 max-w-xs lg:max-w-sm ml-0">
+          <div className="flex space-x-6 mt-4 bg-[#90dde9] py-3 px-8 rounded-full items-center justify-center shadow-xl hover:scale-105 transition-all duration-300 max-w-xs lg:max-w-sm">
             <a
               href="https://www.linkedin.com/in/anton-ishchyk/"
               target="_blank"
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         <Link
           to="/about"
           className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
@@ -71,13 +71,6 @@ const Home: React.FC = () => {
           className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-semibold mb-4">My Projects</h2>
           <p>Explore the projects I have worked on.</p>
-        </Link>
-
-        <Link
-          to="/contact"
-          className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
-          <p>Get in touch with me.</p>
         </Link>
       </div>
     </div>
