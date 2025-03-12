@@ -1,13 +1,13 @@
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
-import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
+import CV from "../assets/about/CV Software Developer Intern Anton Ishchyk.pdf";
 import Timeline from "../components/timeline";
 import { education, work } from "../data/timeline";
 
 const About: React.FC = () => {
   return (
     <div className="w-full flex flex-col items-center px-6 py-8">
-      <div className="mb-16">
+      <div className="mb-8">
         <a
           href={CV}
           download="CV Software Developer Anton Ishchyk.pdf"
