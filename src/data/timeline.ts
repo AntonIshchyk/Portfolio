@@ -1,3 +1,6 @@
+import hr from "../assets/about/hr.png"
+import lntu from "../assets/about/lntu.png"
+
 export interface Education {
   university: string;
   degree: string;
@@ -5,6 +8,7 @@ export interface Education {
   form: string;
   date: string;
   link: string;
+  logo: string;
 }
   
 export interface Work {
@@ -40,6 +44,7 @@ export const education: Education[] = [
     form: "Full-time",
     date: '2023-2027',
     link: "https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/informatica/voltijd/",
+    logo: hr
   },
   {
     university: 'Lutsk National Technical University',
@@ -48,5 +53,6 @@ export const education: Education[] = [
     form: "Part-time",
     date: '2022-2026',
     link: "https://lntu.edu.ua/en",
+    logo: lntu
   },
 ];

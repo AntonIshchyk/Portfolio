@@ -10,7 +10,8 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
         {"university" in props ? (
           <div>
             {props.link ? (
-              <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold">
+              <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold flex items-center gap-2">
+                <img src={props.logo} alt={`${props.university} Logo`} className="h-10 w-10 object-contain" />
                 {props.university}
               </a>
             ) : (
