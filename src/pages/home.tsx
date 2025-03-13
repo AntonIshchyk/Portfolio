@@ -17,33 +17,35 @@ const Home: React.FC = () => {
           <p className="text-2xl">
             Let's build something amazing together!
           </p>
-          <div className="flex space-x-6 mt-4 bg-[#90dde9] py-3 px-8 rounded-full items-center justify-center shadow-xl hover:scale-105 transition-all duration-300 max-w-xs lg:max-w-sm">
-            <a
-              href="https://www.linkedin.com/in/anton-ishchyk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] hover:text-blue-600 text-4xl transition-all duration-200">
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://t.me/Anton_Ishchyk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] hover:text-[#0088cc] text-4xl transition-all duration-200">
-              <FaTelegram />
-            </a>
-            <a
-              href="mailto:anton.ishchyk@gmail.com"
-              className="text-[#333] hover:text-red-500 text-4xl transition-all duration-200">
-              <FaEnvelope />
-            </a>
-            <a
-              href="https://github.com/AntonIshchyk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] hover:text-black text-4xl transition-all duration-200">
-              <FaGithub />
-            </a>
+          <div className="flex justify-center lg:justify-start mt-4">
+            <div className="flex space-x-6 bg-[#90dde9] py-3 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 w-fit mx-auto lg:mx-0">
+              <a
+                href="https://www.linkedin.com/in/anton-ishchyk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#333] hover:text-blue-600 text-4xl transition-all duration-200">
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://t.me/Anton_Ishchyk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#333] hover:text-[#0088cc] text-4xl transition-all duration-200">
+                <FaTelegram />
+              </a>
+              <a
+                href="mailto:anton.ishchyk@gmail.com"
+                className="text-[#333] hover:text-red-500 text-4xl transition-all duration-200">
+                <FaEnvelope />
+              </a>
+              <a
+                href="https://github.com/AntonIshchyk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#333] hover:text-black text-4xl transition-all duration-200">
+                <FaGithub />
+              </a>
+            </div>
           </div>
         </div>
 
