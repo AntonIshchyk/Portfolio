@@ -31,7 +31,7 @@ export const work: Work[] = [
     title: 'Warehouse Employee',
     company: "Verbena Meat",
     description: 'Assisted in maintaining organized warehouse inventory and ensuring efficient stock management.\nResponsible for packing products for distribution.',
-    date: 'July 2020 - August 2020',
+    date: 'Jul-Aug 2020',
     link: "https://verbenameat.com.ua/",
   }
 ];
