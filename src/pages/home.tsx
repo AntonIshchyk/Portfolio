@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram } from "react-icons/fa";
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen p-8">
+    <div className="h-full p-8">
       <div className="flex flex-col lg:flex-row items-center justify-between mb-12 gap-8">
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-5xl font-bold mt-4 mb-4">

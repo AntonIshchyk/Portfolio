@@ -14,7 +14,7 @@ import { SiSqlite, SiTypescript, SiSwagger, SiDotnet} from "react-icons/si";
 
 const Projects: React.FC = () => {
   return (
-    <div className="min-h-screen p-8">
+    <div className="h-full p-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="block bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
           <a
