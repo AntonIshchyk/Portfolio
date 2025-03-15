@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aef9db99.css",
+    "main.js": "/static/js/main.18b2f91c.js",
+    "static/media/endpoints.jpg": "/static/media/endpoints.92b615857d52970852d0.jpg",
+    "static/media/item-groups.jpg": "/static/media/item-groups.c330003e7bedbe6e3844.jpg",
+    "static/media/CV Software Developer Intern Anton Ishchyk.pdf": "/static/media/CV Software Developer Intern Anton Ishchyk.f1050cfb0e103d0aebbf.pdf",
+    "static/media/register.jpg": "/static/media/register.f5d18d905c4941f9f434.jpg",
+    "static/media/test.jpg": "/static/media/test.3cd237b5ee4c34229a93.jpg",
+    "static/media/friends.jpg": "/static/media/friends.97745d520eaefe0b834d.jpg",
+    "static/media/lntu.png": "/static/media/lntu.c3efd9648eeb5dd3f373.png",
+    "static/media/hr.png": "/static/media/hr.44e2093603f421023de8.png",
+    "static/media/friend.jpg": "/static/media/friend.eeb0bf02373c22b28c13.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.aef9db99.css.map": "/static/css/main.aef9db99.css.map",
+    "main.18b2f91c.js.map": "/static/js/main.18b2f91c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aef9db99.css",
+    "static/js/main.18b2f91c.js"
+  ]
+}
