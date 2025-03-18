@@ -1,6 +1,6 @@
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
-import CV from "../assets/about/CV Software Developer Intern Anton Ishchyk.pdf";
+import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
 import voedselbank from "../assets/about/voedselbank-maassluis.png";
 import exc from "../assets/about/exc.png";
 import Timeline from "../components/timeline";
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             className="w-10 h-10 object-contain"
             alt="Voedselbank Maassluis Logo"
           />
-          <span>Volunteer</span>
+          <span>Volunteering at Voedselbank Maassluis (05/2022 - 10/2023)</span>
         </a>
 
         <a href="https://www.excelsiormaassluis.nl/" target="_blank" rel="noopener noreferrer"
