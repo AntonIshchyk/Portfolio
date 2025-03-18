@@ -1,12 +1,13 @@
 import React from "react";
 import { TfiDownload } from "react-icons/tfi";
 import CV from "../assets/about/CV Software Developer Intern Anton Ishchyk.pdf";
+import voedselbank from "../assets/about/voedselbank-maassluis.png"
 import Timeline from "../components/timeline";
 import { education, work } from "../data/timeline";
 
 const About: React.FC = () => {
   return (
-    <div className="w-full flex flex-col items-center px-6 py-8">
+    <div className="w-full flex flex-col items-center py-6">
       <a
         href={CV}
         download="CV Software Developer Anton Ishchyk.pdf"
@@ -17,6 +18,10 @@ const About: React.FC = () => {
       <Timeline work={work} />
       <div className="w-full max-w-2xl">
         <h2 className="text-2xl font-bold">Other Activities</h2>
+        <a href="https://www.voedselbankmaassluis.nl/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+          <img src={voedselbank} className="w-10 h-10 object-contain" alt="Voedselbank Maassluis Logo" />
+          <span className="">Volunteer</span>
+        </a>
       </div>
     </div>
   );
