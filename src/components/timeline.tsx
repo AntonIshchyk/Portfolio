@@ -12,7 +12,7 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
             {props.link ? (
               <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold flex items-center gap-2">
                 <img src={props.logo} alt={`${props.university} Logo`} className="h-12 w-12 object-contain" />
-                {props.university}
+                <span className="hover:underline">{props.university}</span>
               </a>
             ) : (
               <span className="text-xl font-bold">{props.university}</span>
@@ -24,7 +24,7 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
             <div className="text-xl font-bold">
               {props.link ? (
                 <a href={props.link} target="_blank" rel="noopener noreferrer">
-                  {props.title} at {props.company}
+                  <span className="hover:underline">{props.title} at {props.company}</span>
                 </a>
               ) : (
                 <>{props.title} at {props.company}</>

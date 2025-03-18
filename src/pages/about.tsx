@@ -28,7 +28,7 @@ const About: React.FC = () => {
             className="w-12 h-12 object-contain"
             alt="Voedselbank Maassluis Logo"
           />
-          <span className="text-lg">Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
+          <span className="text-lg hover:underline">Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
         </a>
 
         <a href="https://www.excelsiormaassluis.nl/" target="_blank" rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const About: React.FC = () => {
             className="w-12 h-12 object-contain"
             alt="Excelsior Maassluis Logo"
           />
-          <span className="text-lg">Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
+          <span className="text-lg hover:underline">Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
         </a>
         
         <a href="https://www.osvdelphis.nl/watwedoen/conditietraining/" target="_blank" rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const About: React.FC = () => {
             className="w-12 h-12 object-contain"
             alt="OSV Delphis Logo"
           />
-          <span className="text-lg">Finswimming at OSV Delphis | 2023 - Present</span>
+          <span className="text-lg hover:underline">Finswimming at OSV Delphis | 2023 - Present</span>
         </a>
       </div>
     </div>
