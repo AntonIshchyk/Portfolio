@@ -27,7 +27,7 @@ const About: React.FC = () => {
             className="w-10 h-10 object-contain"
             alt="Voedselbank Maassluis Logo"
           />
-          <span>Volunteering at Voedselbank Maassluis (05/2022 - 10/2023)</span>
+          <span>Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
         </a>
 
         <a href="https://www.excelsiormaassluis.nl/" target="_blank" rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const About: React.FC = () => {
             className="w-10 h-10 object-contain"
             alt="Excelsior Maassluis Logo"
           />
-          <span>Excelsior Maassluis</span>
+          <span>Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
         </a>
       </div>
     </div>
