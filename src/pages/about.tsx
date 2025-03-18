@@ -3,6 +3,7 @@ import { TfiDownload } from "react-icons/tfi";
 import CV from "../assets/about/CV Software Developer Anton Ishchyk.pdf";
 import voedselbank from "../assets/about/voedselbank-maassluis.png";
 import exc from "../assets/about/exc.png";
+import delphis from "../assets/about/delphis.png";
 import Timeline from "../components/timeline";
 import { education, work } from "../data/timeline";
 
@@ -24,7 +25,7 @@ const About: React.FC = () => {
           className="mb-2 inline-flex items-center space-x-2">
           <img
             src={voedselbank}
-            className="w-10 h-10 object-contain"
+            className="w-12 h-12 object-contain"
             alt="Voedselbank Maassluis Logo"
           />
           <span>Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
@@ -34,10 +35,20 @@ const About: React.FC = () => {
           className="inline-flex items-center space-x-2">
           <img
             src={exc}
-            className="w-10 h-10 object-contain"
+            className="w-12 h-12 object-contain"
             alt="Excelsior Maassluis Logo"
           />
           <span>Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
+        </a>
+        
+        <a href="https://www.osvdelphis.nl/watwedoen/conditietraining/" target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center space-x-2">
+          <img
+            src={delphis}
+            className="w-12 h-12 object-contain"
+            alt="OSV Delphis Logo"
+          />
+          <span>Finswimming at OSV Delphis | 2023 - Present</span>
         </a>
       </div>
     </div>
