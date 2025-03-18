@@ -63,7 +63,7 @@ const Home: React.FC = () => {
           to="/about"
           className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p>
+          <p className="text-lg">
             Learn more about my background, experiences, and what drives me as a developer.
           </p>
         </Link>
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
           to="/projects"
           className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
           <h2 className="text-2xl font-semibold mb-4">My Projects</h2>
-          <p>Explore the projects I have worked on.</p>
+          <p className="text-lg">Explore the projects I have worked on.</p>
         </Link>
       </div>
     </div>
