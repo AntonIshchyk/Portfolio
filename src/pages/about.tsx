@@ -22,33 +22,33 @@ const About: React.FC = () => {
       <div className="w-full max-w-2xl flex flex-col items-start">
         <h2 className="text-2xl font-bold">Other Activities</h2>
         <a href="https://www.voedselbankmaassluis.nl/" target="_blank" rel="noopener noreferrer"
-          className="mb-2 inline-flex items-center space-x-2">
+          className="inline-flex items-center space-x-4 mb-2">
           <img
             src={voedselbank}
             className="w-12 h-12 object-contain"
             alt="Voedselbank Maassluis Logo"
           />
-          <span>Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
+          <span className="text-lg">Volunteering at Voedselbank Maassluis | 05/2022 - 10/2023</span>
         </a>
 
         <a href="https://www.excelsiormaassluis.nl/" target="_blank" rel="noopener noreferrer"
-          className="inline-flex items-center space-x-2">
+          className="inline-flex items-center space-x-4 mb-2">
           <img
             src={exc}
             className="w-12 h-12 object-contain"
             alt="Excelsior Maassluis Logo"
           />
-          <span>Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
+          <span className="text-lg">Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
         </a>
         
         <a href="https://www.osvdelphis.nl/watwedoen/conditietraining/" target="_blank" rel="noopener noreferrer"
-          className="inline-flex items-center space-x-2">
+          className="inline-flex items-center space-x-4">
           <img
             src={delphis}
             className="w-12 h-12 object-contain"
             alt="OSV Delphis Logo"
           />
-          <span>Finswimming at OSV Delphis | 2023 - Present</span>
+          <span className="text-lg">Finswimming at OSV Delphis | 2023 - Present</span>
         </a>
       </div>
     </div>
