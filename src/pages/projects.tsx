@@ -32,8 +32,7 @@ const Projects: React.FC = () => {
             </Slider>
           </div>
           <p className="text-lg">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
-          <br /> <br />
-          <p className="flex items-center text-lg">
+          <p className="flex items-center text-lg mt-4">
             Technologies: 
             <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-2" />
             <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-2" />
@@ -57,8 +56,7 @@ const Projects: React.FC = () => {
             </Slider>
           </div>
           <p className="text-lg">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
-          <br />
-          <p className="flex items-center text-lg">
+          <p className="flex items-center text-lg mt-4">
             Technologies: 
             <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-2" />
             <SiSwagger className="w-12 h-12 hover:text-[#85C441] transition-colors duration-300 ml-2" />

@@ -12,7 +12,7 @@ const Home: React.FC = () => {
             Hi, I'm Anton Ishchyk
           </h2>
           <p className="text-2xl">
-            A passionate software developer focused on creating optimal, user-friendly, and forward-thinking software solutions.
+            A software developer focused on creating optimal, user-friendly, and forward-thinking software solutions.
           </p>
           <p className="text-2xl">
             Let's build something amazing together!
