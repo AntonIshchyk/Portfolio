@@ -38,7 +38,7 @@ const About: React.FC = () => {
             className="w-12 h-12 object-contain"
             alt="Excelsior Maassluis Logo"
           />
-          <span className="text-lg hover:underline">Football player at Excelsior Maassluis (3e, O23-1) | ... - Present</span>
+          <span className="text-lg hover:underline">Football player at Excelsior Maassluis (3e, O23-1) | 2023 - Present</span>
         </a>
         
         <a href="https://www.osvdelphis.nl/watwedoen/conditietraining/" target="_blank" rel="noopener noreferrer"
