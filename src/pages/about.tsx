@@ -25,27 +25,21 @@ const About: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col mb-6">
         <h2 className="text-2xl font-bold">Skills</h2>
-        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div>
             <h4 className="font-semibold">Programming Languages</h4>
             <div className="flex gap-2 flex-wrap mt-2">
               <SiDotnet size={40} className="hover:text-[#512bd4] transition-colors duration-300" />
               <SiTypescript size={40} className="hover:text-[#3178C6] transition-colors duration-300 ml-2" />
+              <FaReact size={40} className="hover:text-[#61DBFB] transition-colors duration-300" />
               <IoLogoPython size={40} className="hover:text-[#34A2FE] transition-colors duration-300" />
             </div>
           </div>
-
-          <div>
-            <h4 className="font-semibold">Frameworks/Technologies</h4>
-            <div className="flex gap-2 flex-wrap">
-              <FaReact size={40} className="hover:text-[#61DBFB] transition-colors duration-300" />
-              <FaDatabase size={40} className="hover:text-[#00758F] transition-colors duration-300" />
-            </div>
-          </div>
-
+          
           <div>
             <h4 className="font-semibold">Development Practices</h4>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap mt-2">
+              <FaDatabase size={40} className="hover:text-[#00758F] transition-colors duration-300" />
               <FaGitAlt size={40} className="hover:text-[#f04141] transition-colors duration-300" />
               <DiScrum size={50} className="hover:text-[#34A2FE] transition-colors duration-300"/>
             </div>
@@ -53,7 +47,7 @@ const About: React.FC = () => {
 
           <div>
             <h4 className="font-semibold">Languages</h4>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap mt-2">
               English
               Dutch
               Ukrainian
