@@ -47,11 +47,11 @@ const About: React.FC = () => {
 
           <div>
             <h4 className="font-semibold">Languages</h4>
-            <div className="flex gap-2 flex-wrap mt-2">
-              English
-              Dutch
-              Ukrainian
-              Russian
+            <div className="grid grid-cols-4 gap-2 mt-2">
+              <img className="h-10 object-contain mx-auto" src="https://flagcdn.com/gb.svg" alt="English"/>
+              <img className="h-10 object-contain mx-auto" src="https://flagcdn.com/nl.svg" alt="Dutch"/>
+              <img className="h-10 object-contain mx-auto" src="https://flagcdn.com/ua.svg" alt="Ukrainian"/>
+              <img className="h-10 object-contain mx-auto" src="https://flagcdn.com/ru.svg" alt="Russian"/>
             </div>
           </div>
         </div>
