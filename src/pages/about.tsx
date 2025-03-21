@@ -47,7 +47,7 @@ const About: React.FC = () => {
 
           <div>
             <h4 className="font-semibold">Languages</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mt-2">
+            <div className="grid grid-cols-4 gap-2 mt-2">
               <img className="h-10 object-contain" src="https://flagcdn.com/gb.svg" alt="English"/>
               <img className="h-10 object-contain" src="https://flagcdn.com/nl.svg" alt="Dutch"/>
               <img className="h-10 object-contain" src="https://flagcdn.com/ua.svg" alt="Ukrainian"/>
