@@ -1,5 +1,4 @@
 {
-  "homepage": "https://AntonIshchyk.github.io/",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,23 +11,20 @@
     "@types/node": "^16.18.126",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "react": "^18.0.0",
+    "react": "^18.3.1",
     "react-dom": "^18.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.2.0",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -53,8 +49,8 @@
     "@types/babel__generator": "^7.6.8",
     "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.0.0"
+    "tailwindcss": "^3.0.0",
+    "typescript": "^5.8.2"
   }
 }
