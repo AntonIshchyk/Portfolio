@@ -30,7 +30,7 @@ const About: React.FC = () => {
             <h4 className="font-semibold">Programming Languages</h4>
             <div className="flex gap-2 flex-wrap mt-2">
               <SiDotnet size={40} className="hover:text-[#512bd4] transition-colors duration-300" />
-              <SiTypescript size={40} className="hover:text-[#3178C6] transition-colors duration-300 ml-2" />
+              <SiTypescript size={40} className="hover:text-[#3178C6] transition-colors duration-300" />
               <FaReact size={40} className="hover:text-[#61DBFB] transition-colors duration-300" />
               <IoLogoPython size={40} className="hover:text-[#34A2FE] transition-colors duration-300" />
             </div>
