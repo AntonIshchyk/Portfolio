@@ -51,17 +51,17 @@ const Home: React.FC = () => {
         <Link
           to="/about"
           className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
-          <h2 className="text-4xl font-semibold mb-6 relative z-10">About Me</h2>
-          <p className="text-2xl relative z-10">Discover more about my journey and skills.</p>
-          <img src={about} alt="About Me" className="absolute right-0 bottom-0 w-[50%] h-full object-cover opacity-40" />
+          <h2 className="text-4xl font-semibold mb-6">About Me</h2>
+          <p className="text-2xl">Discover more about my journey and skills.</p>
+          <img src={about} alt="About Me" className="absolute right-0 bottom-0 w-[50%] h-full object-cover" />
         </Link>
 
         <Link
           to="/projects"
           className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
-          <h2 className="text-4xl font-semibold mb-6 relative z-10">My Projects</h2>
-          <p className="text-2xl relative z-10">Explore the projects I have worked on.</p>
-          <img src={projects} alt="My Projects" className="absolute right-0 bottom-0 w-[50%] h-full object-cover opacity-40" />
+          <h2 className="text-4xl font-semibold mb-6">My Projects</h2>
+          <p className="text-2xl">Explore the projects I have worked on.</p>
+          <img src={projects} alt="My Projects" className="absolute right-0 bottom-0 w-[40%] h-full object-cover" />
         </Link>
       </div>
     </div>
