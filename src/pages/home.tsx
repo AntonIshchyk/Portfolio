@@ -62,8 +62,8 @@ const Home: React.FC = () => {
           to="/projects"
           className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
           <div className="z-10 flex flex-col justify-center lg:w-[50%] p-4 space-y-4">
-            <h2 className="text-4xl font-semibold">My Projects</h2>
-            <p className="text-xl">Explore the projects I have worked on.</p>
+            <h2 className="text-4xl font-semibold mb-6">My Projects</h2>
+            <p className="text-2xl">Explore the projects I have worked on.</p>
           </div>
           <img src={projects} alt="My Projects" className="absolute right-0 bottom-0 w-[40%] h-full object-cover" />
         </Link>
