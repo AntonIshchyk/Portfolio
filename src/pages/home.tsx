@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import test from "../assets/test.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram } from "react-icons/fa";
+import about from "../assets/home/about.png";
+import projects from "../assets/home/projects.jpg";
 
 const Home: React.FC = () => {
   return (
     <div className="h-full p-8">
       <div className="flex flex-col lg:flex-row items-center justify-between mb-12 gap-8">
         <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-5xl font-bold mt-4 mb-4">
-            Hi, I'm Anton Ishchyk
-          </h2>
+          <h2 className="text-5xl font-bold mt-4 mb-4">Hi, I'm Anton Ishchyk</h2>
           <p className="text-2xl">
             A software developer focused on creating optimal, user-friendly, and forward-thinking software solutions.
           </p>
-          <p className="text-2xl">
-            Let's build something amazing together!
-          </p>
+          <p className="text-2xl">Let's build something amazing together!</p>
           <div className="flex justify-center lg:justify-start mt-4">
             <div className="flex space-x-6 bg-[#90dde9] py-3 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 w-fit mx-auto lg:mx-0">
               <a
@@ -48,31 +45,23 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex-1 max-w-xs lg:max-w-sm xl:max-w-md mx-auto">
-          <img
-            src={test}
-            alt="Software Developer Anton Ishchyk"
-            className="rounded-lg shadow-lg w-full max-w-sm mx-auto"
-          />
-        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         <Link
           to="/about"
-          className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p className="text-lg">
-            Learn more about my background, experiences, and what drives me as a developer.
-          </p>
+          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
+          <h2 className="text-4xl font-semibold mb-6 relative z-10">About Me</h2>
+          <p className="text-2xl relative z-10">Discover more about my journey and skills.</p>
+          <img src={about} alt="About Me" className="absolute right-0 bottom-0 w-[50%] h-full object-cover opacity-40" />
         </Link>
 
         <Link
           to="/projects"
-          className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-2xl font-semibold mb-4">My Projects</h2>
-          <p className="text-lg">Explore the projects I have worked on.</p>
+          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
+          <h2 className="text-4xl font-semibold mb-6 relative z-10">My Projects</h2>
+          <p className="text-2xl relative z-10">Explore the projects I have worked on.</p>
+          <img src={projects} alt="My Projects" className="absolute right-0 bottom-0 w-[50%] h-full object-cover opacity-40" />
         </Link>
       </div>
     </div>
