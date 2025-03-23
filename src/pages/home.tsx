@@ -60,7 +60,7 @@ const Home: React.FC = () => {
 
         <Link
           to="/projects"
-          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col sm:flex-row">
+          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-auto sm:h-96 md:h-96 flex flex-col sm:flex-row">
           <div className="w-full sm:w-1/2 p-4">
             <h2 className="text-4xl font-semibold mb-6">Projects</h2>
             <p className="text-2xl">Explore the projects I have worked on.</p>
