@@ -51,7 +51,7 @@ const Home: React.FC = () => {
         <Link
           to="/about"
           className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
-          <div className="z-10 flex flex-col justify-center lg:w-[50%] p-4 space-y-4">
+          <div className="z-10 flex flex-col justify-center lg:w-[50%] p-4">
             <h2 className="text-4xl font-semibold mb-6">About Me</h2>
             <p className="text-2xl">Discover more about my journey and skills.</p>
           </div>
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             <p className="text-2xl">Explore the projects I have worked on.</p>
           </div>
           <div className="w-full sm:w-1/2 h-full">
-            <img src={projects} alt="My Projects" className="w-full h-full object-cover" />
+            <img src={projects} alt="My Projects" className="w-full h-full object-cover rounded-lg" />
           </div>
         </Link>
       </div>
