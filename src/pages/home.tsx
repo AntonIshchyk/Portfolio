@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Link
           to="/about"
           className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
@@ -55,17 +55,19 @@ const Home: React.FC = () => {
             <h2 className="text-4xl font-semibold mb-6">About Me</h2>
             <p className="text-2xl">Discover more about my journey and skills.</p>
           </div>
-          <img src={about} alt="About Me" className="absolute right-0 bottom-0 w-[50%] h-full object-cover" />
+          <img src={about} alt="About Me" className="absolute right-0 bottom-0 w-[50%] h-full object-cover " />
         </Link>
 
         <Link
           to="/projects"
-          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col justify-between">
-          <div className="z-10 flex flex-col justify-center lg:w-[50%] p-4 space-y-4">
-            <h2 className="text-4xl font-semibold mb-6">My Projects</h2>
+          className="relative bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden h-96 flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/2 p-4">
+            <h2 className="text-4xl font-semibold mb-6">Projects</h2>
             <p className="text-2xl">Explore the projects I have worked on.</p>
           </div>
-          <img src={projects} alt="My Projects" className="absolute right-0 bottom-0 w-[40%] h-full object-cover" />
+          <div className="w-full sm:w-1/2 h-full">
+            <img src={projects} alt="My Projects" className="w-full h-full object-cover" />
+          </div>
         </Link>
       </div>
     </div>
