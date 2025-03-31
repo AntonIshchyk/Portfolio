@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-5xl font-bold mt-4 mb-4">Hi, I'm Anton Ishchyk</h2>
           <p className="text-2xl">
-            A software developer focused on creating optimal, user-friendly, and forward-thinking software solutions.
+            Open for an internship as a Full-Stack or Back-end Developer
           </p>
           <p className="text-2xl">Let's build something amazing together!</p>
           <div className="flex justify-center lg:justify-start mt-4">
