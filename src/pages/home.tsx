@@ -11,9 +11,12 @@ const Home: React.FC = () => {
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-5xl font-bold mt-4 mb-4">Hi, I'm Anton Ishchyk</h2>
           <p className="text-2xl">
-            Open for an internship as a Full-Stack or Back-end Developer
+            I think from the user's perspective, as if I'm building <strong>software</strong> for myself.
           </p>
-          <p className="text-2xl">Let's build something amazing together!</p>
+          <p className="text-2xl">
+            Open for an <strong>internship</strong> as a <strong>Full-Stack</strong> or <strong>Back-end Developer</strong>
+          </p>
+          <p className="text-2xl">Let's build some <strong>amazing solutions</strong> together!</p>
           <div className="flex justify-center lg:justify-start mt-4">
             <div className="flex space-x-6 bg-[#90dde9] py-3 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 w-fit mx-auto lg:mx-0">
               <a
