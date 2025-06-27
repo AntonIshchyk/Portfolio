@@ -111,7 +111,6 @@ const Projects: React.FC = () => {
   return (
     <div className="h-full p-4 flex flex-col lg:flex-row gap-6">
       <div className="w-full lg:w-80 flex-shrink-0 flex flex-col items-center">
-        <h2 className="text-2xl font-bold text-[#2C2C2C] mb-4 text-center">Choose a Project</h2>
         <div className="space-y-3 w-full max-w-md lg:max-w-none flex flex-col items-center">
           {projectOptions.map((project) => (
             <div
