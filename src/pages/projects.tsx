@@ -109,15 +109,15 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="h-full p-4 flex gap-6">
-      <div className="w-80 flex-shrink-0">
+    <div className="h-full p-4 flex flex-col lg:flex-row gap-6">
+      <div className="w-full lg:w-80 flex-shrink-0 flex flex-col items-center">
         <h2 className="text-2xl font-bold text-[#2C2C2C] mb-4 text-center">Choose a Project</h2>
-        <div className="space-y-3">
+        <div className="space-y-3 w-full max-w-md lg:max-w-none flex flex-col items-center">
           {projectOptions.map((project) => (
             <div
               key={project.id}
               onClick={() => setSelectedProject(project.id)}
-              className={`bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-3 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+              className={`bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-3 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl w-full ${
                 selectedProject === project.id ? 'ring-4 ring-[#3B82F6] bg-[#3A3A3A]' : ''
               }`}
             >
