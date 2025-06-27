@@ -102,7 +102,8 @@ const Projects: React.FC = () => {
               <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
               </Slider>
             </div>
-            <p className="text-xl mb-4 leading-relaxed">AI chatbot that helps employees find answers about company policies and CAO rules, with HR staff able to join the chat when needed.</p>
+            <p className="text-xl mb-4 leading-relaxed">This project is designed to reduce the workload of HR employees by using a chatbot that answers questions based on the CAO and other internal company documents. 
+              If the chatbot cannot provide an answer, the user can request to speak a HR employee directly in the same chat.</p>
             <div className="flex items-center text-xl">
               <span className="">Technologies:</span>
               <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-3" />
