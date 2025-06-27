@@ -2,130 +2,65 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// project images
-import friendsImage from "../assets/projects/friends.jpg";
-import friendImage from "../assets/projects/friend.jpg";
-import itemGroups from "../assets/projects/item-groups.jpg";
-import endpoints from "../assets/projects/endpoints.jpg"
-// icons
-import { FaReact, FaGithub, FaGitAlt, FaPython, FaDocker} from "react-icons/fa";
-import { SiSqlite, SiTypescript, SiSwagger, SiDotnet, SiPostgresql, SiTailwindcss} from "react-icons/si";
+import { FaGithub} from "react-icons/fa";
+import { projectsData } from "../data/projects";
 
-const projectOptions = [
-  {
-    id: 1,
-    title: "AI-Powered HR Assistant Platform",
-    description: "Smart Employment Document Processing & Chat Interface"
-  },
-  {
-    id: 2,
-    title: "Social Agenda",
-    description: "Employee Workshop & Team Building Management"
-  },
-  {
-    id: 3,
-    title: "CargoHub",
-    description: "Legacy System Refactoring & Enhancement"
-  }
-];
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number>(1);
   const renderProjectDetails = () => {
-    if (selectedProject === 2) {
-      return (
-        <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
+    const project = projectsData.find(p => p.id === selectedProject);
+    if (!project) return null;
+
+    return (
+      <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
+        {project.githubUrl ? (
           <a
-            href="https://github.com/AntonIshchyk/Social-Agenda"
+            href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-4xl font-semibold mb-4 hover:underline justify-center">
-            Social Agenda <FaGithub className="w-12 h-12 ml-3"/>
+            {project.title} <FaGithub className="w-12 h-12 ml-3"/>
           </a>
+        ) : (
+          <div className="text-center">
+            <h3 className="text-4xl font-semibold mb-4">{project.title}</h3>
+          </div>
+        )}
+        
+        {project.images && project.images.length > 0 && (
           <div className="mb-8">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
-              <img src={friendsImage} alt="Friends Page" className="w-full h-auto rounded-lg" />
-              <img src={friendImage} alt="Friend Attending Event" className="w-full h-auto rounded-lg" />
+              {project.images.map((image, index) => (
+                <img key={index} src={image.src} alt={image.alt} className="w-full h-auto rounded-lg" />
+              ))}
             </Slider>
           </div>
-          <p className="text-xl mb-4 leading-relaxed">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
-          <div className="flex items-center text-xl">
-            <span className="">Technologies:</span>
-            <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-3" />
-            <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-3" />
-            <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-3" />
-            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-3" />
-          </div>
+        )}
+        
+        <p className="text-xl mb-4 leading-relaxed">{project.longDescription}</p>
+        
+        <div className="flex items-center text-xl">
+          <span className="">Technologies:</span>
+          {project.technologies.map((tech, index) => {
+            const IconComponent = tech.icon;
+            return (
+              <IconComponent 
+                key={index}
+                className={`w-12 h-12 ${tech.hoverColor} transition-colors duration-300 ml-3`}
+              />
+            );
+          })}
         </div>
-      );
-    }
-
-    if (selectedProject === 3) {
-      return (
-        <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
-          <a
-            href="https://github.com/AntonIshchyk/CargoHub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-4xl font-semibold mb-4 hover:underline justify-center">
-            CargoHub <FaGithub className="w-12 h-12 ml-3"/>
-          </a>
-          <div className="mb-8">
-            <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
-                <img src={endpoints} alt="API Endpoints" className="w-full h-auto rounded-lg" />
-                <img src={itemGroups} alt="Item Groups Endpoint Showcase" className="w-full h-auto rounded-lg" />
-            </Slider>
-          </div>
-          <p className="text-xl mb-4 leading-relaxed">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
-          <div className="flex items-center text-xl">
-            <span className="">Technologies:</span>
-            <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-3" />
-            <SiSwagger className="w-12 h-12 hover:text-[#85C441] transition-colors duration-300 ml-3" />
-            <SiSqlite className="w-12 h-12 hover:text-[#003B57] transition-colors duration-300 ml-3" />
-            <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-3" />
-          </div>
-        </div>
-      );
-    }
-
-    if (selectedProject === 1) {
-      return (
-        <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
-            <a
-              href="https://github.com/AntonIshchyk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center text-4xl font-semibold mb-4 hover:underline justify-center">
-              AI-Powered HR Assistant Platform <FaGithub className="w-12 h-12 ml-3"/>
-            </a>
-            <div className="mb-8">
-              <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
-              </Slider>
-            </div>
-            <p className="text-xl mb-4 leading-relaxed">This project is designed to reduce the workload of HR employees by using a chatbot that answers questions based on the CAO and other internal company documents. 
-              If the chatbot cannot provide an answer, the user can request to speak a HR employee directly in the same chat.</p>
-            <div className="flex items-center text-xl">
-              <span className="">Technologies:</span>
-              <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-3" />
-              <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-3" />
-              <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-3" />
-              <SiTailwindcss className="w-12 h-12 hover:text-[#06B6D4] transition-colors duration-300 ml-3" />
-              <FaPython className="w-12 h-12 hover:text-[#3776AB] transition-colors duration-300 ml-3" />
-              <SiPostgresql className="w-12 h-12 hover:text-[#336791] transition-colors duration-300 ml-3" />
-              <FaDocker className="w-12 h-12 hover:text-[#2496ED] transition-colors duration-300 ml-3" />
-            </div>
-        </div>
-      );
-    }
-
-    return null;
+      </div>
+    );
   };
 
   return (
     <div className="h-full p-4 flex flex-col lg:flex-row gap-6">
       <div className="w-full lg:w-80 flex-shrink-0 flex flex-col items-center">
         <div className="space-y-3 w-full max-w-md lg:max-w-none flex flex-col items-center">
-          {projectOptions.map((project) => (
+          {projectsData.map((project) => (
             <div
               key={project.id}
               onClick={() => setSelectedProject(project.id)}
