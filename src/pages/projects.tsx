@@ -48,8 +48,8 @@ const Projects: React.FC = () => {
               <img src={friendImage} alt="Friend Attending Event" className="w-full h-auto rounded-lg" />
             </Slider>
           </div>
-          <p className="text-xl text-center mb-8 leading-relaxed">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
-          <div className="flex items-center justify-center text-xl">
+          <p className="text-xl mb-4 leading-relaxed">The website makes it easier for employees to see who is attending Workshops and Team Building activities. It also helps managers announce and manage attendance for these events.</p>
+          <div className="flex items-center text-xl">
             <span className="">Technologies:</span>
             <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-3" />
             <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-3" />
@@ -76,8 +76,8 @@ const Projects: React.FC = () => {
                 <img src={itemGroups} alt="Item Groups Endpoint Showcase" className="w-full h-auto rounded-lg" />
             </Slider>
           </div>
-          <p className="text-xl text-center mb-8 leading-relaxed">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
-          <div className="flex items-center justify-center text-xl">
+          <p className="text-xl mb-4 leading-relaxed">Our team of three developers was tasked with analyzing, documenting, refactoring, and enhancing a legacy system inherited from the previous development team. Our focus was on improving code quality, maintainability, and functionality.</p>
+          <div className="flex items-center text-xl">
             <span className="">Technologies:</span>
             <SiDotnet className="w-12 h-12 hover:text-[#512BD4] transition-colors duration-300 ml-3" />
             <SiSwagger className="w-12 h-12 hover:text-[#85C441] transition-colors duration-300 ml-3" />
@@ -91,10 +91,19 @@ const Projects: React.FC = () => {
     if (selectedProject === 1) {
       return (
         <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
-          <div className="text-center">
-            <h3 className="text-4xl font-semibold mb-4">AI-Powered HR Assistant Platform</h3>
-            <p className="text-xl mb-8 leading-relaxed">AI chatbot that helps employees find answers about company policies and CAO rules, with HR staff able to join the chat when needed.</p>
-            <div className="flex items-center justify-center text-xl flex-wrap gap-2">
+            <a
+              href="https://github.com/AntonIshchyk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-4xl font-semibold mb-4 hover:underline justify-center">
+              AI-Powered HR Assistant Platform <FaGithub className="w-12 h-12 ml-3"/>
+            </a>
+            <div className="mb-8">
+              <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
+              </Slider>
+            </div>
+            <p className="text-xl mb-4 leading-relaxed">AI chatbot that helps employees find answers about company policies and CAO rules, with HR staff able to join the chat when needed.</p>
+            <div className="flex items-center text-xl">
               <span className="">Technologies:</span>
               <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-3" />
               <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-3" />
@@ -104,7 +113,6 @@ const Projects: React.FC = () => {
               <SiPostgresql className="w-12 h-12 hover:text-[#336791] transition-colors duration-300 ml-3" />
               <FaDocker className="w-12 h-12 hover:text-[#2496ED] transition-colors duration-300 ml-3" />
             </div>
-          </div>
         </div>
       );
     }
