@@ -8,8 +8,8 @@ import friendImage from "../assets/projects/friend.jpg";
 import itemGroups from "../assets/projects/item-groups.jpg";
 import endpoints from "../assets/projects/endpoints.jpg"
 // icons
-import { FaReact, FaGithub, FaGitAlt} from "react-icons/fa";
-import { SiSqlite, SiTypescript, SiSwagger, SiDotnet} from "react-icons/si";
+import { FaReact, FaGithub, FaGitAlt, FaPython, FaDocker} from "react-icons/fa";
+import { SiSqlite, SiTypescript, SiSwagger, SiDotnet, SiPostgresql, SiTailwindcss} from "react-icons/si";
 
 const projectOptions = [
   {
@@ -92,13 +92,17 @@ const Projects: React.FC = () => {
       return (
         <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
           <div className="text-center">
-            <h3 className="text-4xl font-semibold mb-4">Project 3 - Coming Soon</h3>
-            <p className="text-xl mb-8 leading-relaxed">This is where your third project will be displayed. Add your project details here!</p>
-            <div className="flex items-center justify-center text-xl">
+            <h3 className="text-4xl font-semibold mb-4">AI-Powered HR Assistant Platform</h3>
+            <p className="text-xl mb-8 leading-relaxed">AI chatbot that helps employees find answers about company policies and CAO rules, with HR staff able to join the chat when needed.</p>
+            <div className="flex items-center justify-center text-xl flex-wrap gap-2">
               <span className="">Technologies:</span>
+              <SiDotnet className="w-12 h-12 hover:text-[#512bd4] transition-colors duration-300 ml-3" />
               <FaReact className="w-12 h-12 hover:text-[#61DBFB] transition-colors duration-300 ml-3" />
               <SiTypescript className="w-12 h-12 hover:text-[#3178C6] transition-colors duration-300 ml-3" />
-              <FaGitAlt className="w-12 h-12 hover:text-[#f04141] transition-colors duration-300 ml-3" />
+              <SiTailwindcss className="w-12 h-12 hover:text-[#06B6D4] transition-colors duration-300 ml-3" />
+              <FaPython className="w-12 h-12 hover:text-[#3776AB] transition-colors duration-300 ml-3" />
+              <SiPostgresql className="w-12 h-12 hover:text-[#336791] transition-colors duration-300 ml-3" />
+              <FaDocker className="w-12 h-12 hover:text-[#2496ED] transition-colors duration-300 ml-3" />
             </div>
           </div>
         </div>
