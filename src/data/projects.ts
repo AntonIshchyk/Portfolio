@@ -3,6 +3,11 @@ import friendsImage from "../assets/projects/friends.jpg";
 import friendImage from "../assets/projects/friend.jpg";
 import itemGroups from "../assets/projects/item-groups.jpg";
 import endpoints from "../assets/projects/endpoints.jpg"
+import chat from "../assets/projects/chat.jpg";
+import dashboard from "../assets/projects/dashboard.png";
+import dashboadrdStats from "../assets/projects/dashboard stats.jpg";
+import charts from "../assets/projects/charts.png";
+import archived from "../assets/projects/archived.jpg";
 // icons
 import { FaReact, FaGitAlt, FaPython, FaDocker} from "react-icons/fa";
 import { SiSqlite, SiTypescript, SiSwagger, SiDotnet, SiPostgresql, SiTailwindcss} from "react-icons/si";
@@ -24,7 +29,13 @@ export const projectsData: ProjectDetails[] = [
     title: "AI-Powered HR Assistant Platform",
     description: "Smart Employment Document Processing & Chat Interface",
     githubUrl: "https://github.com/AntonIshchyk/",
-    images: [],
+    images: [
+      { src: chat, alt: "Chat Interface" },
+      { src: dashboard, alt: "Dashboard Overview" },
+      { src: dashboadrdStats, alt: "Dashboard Statistics" },
+      { src: charts, alt: "Charts and Graphs" },
+      { src: archived, alt: "Archived Chats" }
+    ],
     longDescription: "This project is designed to reduce the workload of HR employees by using a chatbot that answers questions based on the CAO and other internal company documents. If the chatbot cannot provide an answer, the user can request to speak a HR employee directly in the same chat.",
     technologies: [
       { icon: SiDotnet, hoverColor: "hover:text-[#512bd4]" },
