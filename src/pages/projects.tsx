@@ -14,25 +14,25 @@ import { SiSqlite, SiTypescript, SiSwagger, SiDotnet} from "react-icons/si";
 const projectOptions = [
   {
     id: 1,
+    title: "AI-Powered HR Assistant Platform",
+    description: "Smart Employment Document Processing & Chat Interface"
+  },
+  {
+    id: 2,
     title: "Social Agenda",
     description: "Employee Workshop & Team Building Management"
   },
   {
-    id: 2,
+    id: 3,
     title: "CargoHub",
     description: "Legacy System Refactoring & Enhancement"
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "Your Next Amazing Project"
   }
 ];
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number>(1);
   const renderProjectDetails = () => {
-    if (selectedProject === 1) {
+    if (selectedProject === 2) {
       return (
         <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
           <a
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       );
     }
 
-    if (selectedProject === 2) {
+    if (selectedProject === 3) {
       return (
         <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
           <a
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
       );
     }
 
-    if (selectedProject === 3) {
+    if (selectedProject === 1) {
       return (
         <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
           <div className="text-center">
