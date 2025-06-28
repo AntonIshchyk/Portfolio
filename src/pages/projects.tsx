@@ -8,49 +8,58 @@ import { projectsData } from "../data/projects";
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number>(1);
+  
   const renderProjectDetails = () => {
     const project = projectsData.find(p => p.id === selectedProject);
     if (!project) return null;
 
     return (
-      <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-12 transition-all duration-300">
+      <div className="bg-[#2C2C2C] text-[#F5F5F5] rounded-lg shadow-lg p-4 sm:p-8 lg:p-12 transition-all duration-300 flex flex-col">
         {project.githubUrl ? (
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-4xl font-semibold mb-4 hover:underline justify-center">
-            {project.title} <FaGithub className="w-12 h-12 ml-3"/>
+            className="flex items-center text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 hover:underline justify-center">
+            {project.title} <FaGithub className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 ml-3"/>
           </a>
         ) : (
           <div className="text-center">
-            <h3 className="text-4xl font-semibold mb-4">{project.title}</h3>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">{project.title}</h3>
           </div>
         )}
         
         {project.images && project.images.length > 0 && (
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8 flex-shrink-0">
             <Slider dots infinite speed={500} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={5000}>
               {project.images.map((image, index) => (
-                <img key={index} src={image.src} alt={image.alt} className="w-full h-auto rounded-lg" />
+                <div key={index} className="px-1">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt} 
+                    className="w-full h-auto max-h-[50vh] sm:max-h-[60vh] lg:max-h-[70vh] object-contain rounded-lg shadow-md" 
+                  />
+                </div>
               ))}
             </Slider>
           </div>
         )}
         
-        <p className="text-xl mb-4 leading-relaxed">{project.longDescription}</p>
-        
-        <div className="flex flex-wrap items-center gap-3 text-xl">
-          <span className="">Technologies:</span>
-          {project.technologies.map((tech, index) => {
-            const IconComponent = tech.icon;
-            return (
-              <IconComponent 
-                key={index}
-                className={`w-12 h-12 ${tech.hoverColor} transition-colors duration-300`}
-              />
-            );
-          })}
+        <div className="flex-grow flex flex-col justify-between">
+          <p className="text-lg sm:text-xl mb-4 leading-relaxed">{project.longDescription}</p>
+          
+          <div className="flex flex-wrap items-center gap-3 text-lg sm:text-xl">
+            <span className="">Technologies:</span>
+            {project.technologies.map((tech, index) => {
+              const IconComponent = tech.icon;
+              return (
+                <IconComponent 
+                  key={index}
+                  className={`w-10 h-10 sm:w-12 sm:h-12 ${tech.hoverColor} transition-colors duration-300`}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     );
