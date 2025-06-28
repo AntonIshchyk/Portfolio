@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,14 @@ import { projectsData } from "../data/projects";
 
 
 const Projects: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<number>(1);
+  const [selectedProject, setSelectedProject] = useState<number>(() => {
+    const saved = localStorage.getItem('selectedProject');
+    return saved ? parseInt(saved) : 1;
+  });
+  
+  useEffect(() => {
+    localStorage.setItem('selectedProject', selectedProject.toString());
+  }, [selectedProject]);
   
   const renderProjectDetails = () => {
     const project = projectsData.find(p => p.id === selectedProject);
