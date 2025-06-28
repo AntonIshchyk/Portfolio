@@ -40,14 +40,14 @@ const Projects: React.FC = () => {
         
         <p className="text-xl mb-4 leading-relaxed">{project.longDescription}</p>
         
-        <div className="flex items-center text-xl">
+        <div className="flex flex-wrap items-center gap-3 text-xl">
           <span className="">Technologies:</span>
           {project.technologies.map((tech, index) => {
             const IconComponent = tech.icon;
             return (
               <IconComponent 
                 key={index}
-                className={`w-12 h-12 ${tech.hoverColor} transition-colors duration-300 ml-3`}
+                className={`w-12 h-12 ${tech.hoverColor} transition-colors duration-300`}
               />
             );
           })}
