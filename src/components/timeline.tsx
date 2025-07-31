@@ -27,16 +27,18 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
             <div>{props.degree} in {props.field} | {props.form}</div>
           </div>
         ) : (
-          <div className="sm:ml-8">
-            <div className="text-xl font-bold">
-              {props.link ? (
-                <a href={props.link} target="_blank" rel="noopener noreferrer">
-                  <span className="hover:underline">{props.title} at {props.company}</span>
-                </a>
-              ) : (
-                <>{props.title} at {props.company}</>
-              )}
-            </div>
+          <div className="ml-6 -mt-1">
+            {props.link ? (
+              <a href={props.link} target="_blank" rel="noopener noreferrer" className="text-xl font-bold flex items-center gap-2">
+                <img src={props.logo} alt={`${props.company} Logo`} className="h-12 w-12 object-contain" />
+                <span className="hover:underline">{props.title} at {props.company}</span>
+              </a>
+            ) : (
+              <div className="text-xl font-bold flex items-center gap-2">
+                <img src={props.logo} alt={`${props.company} Logo`} className="h-12 w-12 object-contain" />
+                <span>{props.title} at {props.company}</span>
+              </div>
+            )}
             <div className="whitespace-pre-line">{props.description}</div>
           </div>
         )}

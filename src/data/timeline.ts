@@ -1,5 +1,6 @@
 import hr from "../assets/about/hr.png"
 import lntu from "../assets/about/lntu.png"
+import scor from "../assets/about/scor.png";
 
 export interface Education {
   university: string;
@@ -17,6 +18,7 @@ export interface Work {
   description: string;
   date: string;
   link: string;
+  logo: string;
 }
 
 export const work: Work[] = [
@@ -26,6 +28,7 @@ export const work: Work[] = [
     description: 'Learning and getting hands-on experience in software development.',
     date: '09/01/2025 - 26/12/2025',
     link: "https://www.scordigitalsolutions.com/",
+    logo: scor
   }
 ];
 
