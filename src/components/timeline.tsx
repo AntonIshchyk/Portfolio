@@ -1,10 +1,17 @@
 import { Education, Work } from "../data/timeline";
 
 const TimelineItem: React.FC<Education | Work> = (props) => {
+  const isLongDate = props.date.length > 10;
+  
+  // Dynamic classes based on date length
+  const containerPadding = isLongDate ? "sm:pl-44" : "sm:pl-32";
+  const timelineMargin = isLongDate ? "sm:before:ml-[11rem] sm:after:ml-[11rem]" : "sm:before:ml-[6.5rem] sm:after:ml-[6.5rem]";
+  const dateWidth = isLongDate ? "w-40" : "w-20";
+
   return (
-    <div className="group relative py-6 pl-8 sm:pl-32 flex justify-center">
-      <div className="w-full max-w-2xl mb-1 flex flex-col items-start before:absolute before:left-2 before:h-full before:-translate-x-1/2 before:translate-y-3 before:self-start before:bg-slate-300 before:px-px after:absolute after:left-2 after:box-content after:h-2 after:w-2 after:-translate-x-1/2 after:translate-y-1.5 after:rounded-full after:border-4 after:border-slate-50 after:bg-indigo-600 group-last:before:hidden sm:flex-row sm:before:left-0 sm:before:ml-[6.5rem] sm:after:left-0 sm:after:ml-[6.5rem]">
-        <time className="left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full bg-emerald-100 text-xs font-semibold uppercase text-emerald-600 sm:absolute sm:mb-0">
+    <div className={`group relative py-6 pl-8 ${containerPadding} flex justify-center`}>
+      <div className={`w-full max-w-2xl mb-1 flex flex-col items-start before:absolute before:left-2 before:h-full before:-translate-x-1/2 before:translate-y-3 before:self-start before:bg-slate-300 before:px-px after:absolute after:left-2 after:box-content after:h-2 after:w-2 after:-translate-x-1/2 after:translate-y-1.5 after:rounded-full after:border-4 after:border-slate-50 after:bg-indigo-600 group-last:before:hidden sm:flex-row sm:before:left-0 ${timelineMargin} sm:after:left-0`}>
+        <time className={`left-0 mb-3 inline-flex h-6 ${dateWidth} translate-y-0.5 items-center justify-center rounded-full bg-emerald-100 text-xs font-semibold uppercase text-emerald-600 whitespace-nowrap sm:absolute sm:mb-0`}>
           {props.date}
         </time>
         {"university" in props ? (
@@ -20,7 +27,7 @@ const TimelineItem: React.FC<Education | Work> = (props) => {
             <div>{props.degree} in {props.field} | {props.form}</div>
           </div>
         ) : (
-          <div>
+          <div className="sm:ml-8">
             <div className="text-xl font-bold">
               {props.link ? (
                 <a href={props.link} target="_blank" rel="noopener noreferrer">
