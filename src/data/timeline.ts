@@ -21,11 +21,11 @@ export interface Work {
 
 export const work: Work[] = [
   {
-    title: 'Software Developer',
-    company: "Your Company",
-    description: 'Contributed to Your Company by working on ... and achieving ...',
-    date: 'ASAP - X',
-    link: "",
+    title: 'Intern',
+    company: "SCOR Digital Solutions",
+    description: 'Learning and getting hands-on experience in software development.',
+    date: '09/01/2025 - 26/12/2025',
+    link: "https://www.scordigitalsolutions.com/",
   }
 ];
 
